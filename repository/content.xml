@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.2.0'?>
+<repository name='file:/C:/eclipse-open-ws/open-s/dev/packaging/org.xpect.repository/target/site/repository - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1641916532179'/>
+    <property name='p2.compressed' value='false'/>
+  </properties>
+  <units size='3'>
+    <unit id='org.eclipse.xpect' version='0.2.0.202201060752' generation='2'>
+      <update id='org.eclipse.xpect' range='[0.0.0,0.2.0.202201060752)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.pluginName' value='org.eclipse.xpect'/>
+        <property name='df_LT.providerName' value='Eclipse Xpect Project'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='25'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect' version='0.2.0.202201060752'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.xpect' version='0.2.0.202201060752'/>
+        <provided namespace='java.package' name='org.eclipse.xpect' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.expectation' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.expectation.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.formatting' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.lexer' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.lib' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.parameter' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.parser.antlr' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.parser.antlr.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.parser.antlr.lexer' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.registry' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.runner' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.scoping' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.serializer' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.services' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.setup' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.state' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.text' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.validation' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='org.eclipse.xpect' version='0.2.0.202201060752'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='22'>
+        <required namespace='osgi.bundle' name='org.apache.log4j' range='1.2.0'/>
+        <required namespace='osgi.bundle' name='org.junit' range='4.11.0'/>
+        <required namespace='osgi.bundle' name='org.antlr.runtime' range='3.2.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext' range='2.9.2'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.util' range='2.9.2'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='2.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.common' range='2.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.common.types' range='2.9.2'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.generator' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.apache.commons.logging' range='1.0.4' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.codegen.ecore' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.mwe.utils' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.mwe2.launch' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='de.itemis.statefullexer' range='1.0.0' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ecore' range='2.9.2' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.objectweb.asm' range='[3.0.0,10.0.0)' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='3.0.0' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='3.0.0' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='io.github.classgraph' range='4.8.35'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='0.0.0'/>
+        <required namespace='java.package' name='org.apache.log4j' range='0.0.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.xpect' version='0.2.0.202201060752'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.eclipse.xpect;singleton:=true&#xA;Bundle-Version: 0.2.0.202201060752&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.xpect.xtext.lib' version='0.2.0.202201060752' singleton='false' generation='2'>
+      <update id='org.eclipse.xpect.xtext.lib' range='[0.0.0,0.2.0.202201060752)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Lib'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+      </properties>
+      <provides size='10'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.xtext.lib' version='0.2.0.202201060752'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.xpect.xtext.lib' version='0.2.0.202201060752'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.xtext.lib.setup' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.xtext.lib.setup.emf' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.xtext.lib.setup.generic' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.xtext.lib.setup.workspace' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.xtext.lib.tests' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.xtext.lib.util' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='org.eclipse.xpect.xtext.lib' version='0.2.0.202201060752'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='9'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='3.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='3.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xpect' range='[0.2.0,0.2.1)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xpect.ui' range='[0.2.0,0.2.1)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui' range='2.9.2'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='3.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='3.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='0.0.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.xpect.xtext.lib' version='0.2.0.202201060752'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.eclipse.xpect.xtext.lib&#xA;Bundle-Version: 0.2.0.202201060752&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.xpect.xtext.xbase.lib' version='0.2.0.202201060752' singleton='false' generation='2'>
+      <update id='org.eclipse.xpect.xtext.xbase.lib' range='[0.0.0,0.2.0.202201060752)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Lib'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+      </properties>
+      <provides size='6'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.xtext.xbase.lib' version='0.2.0.202201060752'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.xpect.xtext.xbase.lib' version='0.2.0.202201060752'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.xtext.xbase.lib' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.xtext.xbase.lib.tests' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='org.eclipse.xpect.xtext.xbase.lib' version='0.2.0.202201060752'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='11'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='3.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='3.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xpect' range='[0.2.0,0.2.1)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xpect.ui' range='[0.2.0,0.2.1)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase' range='2.9.2'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui' range='2.9.2'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='3.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='3.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xpect.xtext.lib' range='[0.2.0,0.2.1)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.junit' range='2.9.2'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.xpect.xtext.xbase.lib' version='0.2.0.202201060752'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.eclipse.xpect.xtext.xbase.lib&#xA;Bundle-Version: 0.2.0.202201060752&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+  </units>
+</repository>

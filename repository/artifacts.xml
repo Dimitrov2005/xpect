@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='file:/C:/eclipse-open-ws/open-s/dev/packaging/org.xpect.repository/target/site/repository - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1641916532179'/>
+    <property name='p2.compressed' value='false'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='3'>
+    <artifact classifier='osgi.bundle' id='org.eclipse.xpect' version='0.2.0.202201060752'>
+      <properties size='5'>
+        <property name='artifact.size' value='577619'/>
+        <property name='download.size' value='577619'/>
+        <property name='download.md5' value='e07860b709fd5f78bb03e09d4dfeb7b9'/>
+        <property name='download.checksum.md5' value='e07860b709fd5f78bb03e09d4dfeb7b9'/>
+        <property name='download.checksum.sha-256' value='f90108f90182f04684348e58873bdfc7eb4a0b63eaf48329b238dd78a06ba5be'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.xpect.xtext.lib' version='0.2.0.202201060752'>
+      <properties size='5'>
+        <property name='artifact.size' value='135430'/>
+        <property name='download.size' value='135430'/>
+        <property name='download.md5' value='cd11aa1c324093ce071689ab65a8c7cf'/>
+        <property name='download.checksum.md5' value='cd11aa1c324093ce071689ab65a8c7cf'/>
+        <property name='download.checksum.sha-256' value='3dd78cd647f7a5ad61d1d4eba6946a30357bc92c6be1ce9aa47d551fa28d0015'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.xpect.xtext.xbase.lib' version='0.2.0.202201060752'>
+      <properties size='5'>
+        <property name='artifact.size' value='9854'/>
+        <property name='download.size' value='9854'/>
+        <property name='download.md5' value='7b2e813ecbc44cff196e872ff18c1c91'/>
+        <property name='download.checksum.md5' value='7b2e813ecbc44cff196e872ff18c1c91'/>
+        <property name='download.checksum.sha-256' value='4eeb03f846c9fd7afe995ea468366dce1b14505b79c3c7f308cc011b9c830ed9'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>
