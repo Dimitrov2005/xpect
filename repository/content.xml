@@ -2,85 +2,191 @@
 <?metadataRepository version='1.2.0'?>
 <repository name='file:/C:/eclipse-open-ws/open-s/dev/packaging/org.xpect.repository/target/site/repository - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1641916532179'/>
+    <property name='p2.timestamp' value='1642001174981'/>
     <property name='p2.compressed' value='false'/>
   </properties>
-  <units size='3'>
-    <unit id='org.eclipse.xpect' version='0.2.0.202201060752' generation='2'>
-      <update id='org.eclipse.xpect' range='[0.0.0,0.2.0.202201060752)' severity='0'/>
+  <units size='20'>
+    <unit id='org.eclipse.xpect.source' version='0.2.0.202201060752' singleton='false'>
+      <update id='org.eclipse.xpect.source' range='[0.0.0,0.2.0.202201060752)' severity='0'/>
       <properties size='5'>
-        <property name='df_LT.pluginName' value='org.eclipse.xpect'/>
-        <property name='df_LT.providerName' value='Eclipse Xpect Project'/>
-        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
-        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
-        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+        <property name='df_LT.bundleVendor' value='Eclipse Xpect Project'/>
+        <property name='df_LT.bundleName' value='org.eclipse.xpect Source'/>
+        <property name='org.eclipse.equinox.p2.name' value='%bundleName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%bundleVendor'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='OSGI-INF/l10n/bundle-src'/>
       </properties>
-      <provides size='25'>
-        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect' version='0.2.0.202201060752'/>
-        <provided namespace='osgi.bundle' name='org.eclipse.xpect' version='0.2.0.202201060752'/>
-        <provided namespace='java.package' name='org.eclipse.xpect' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.expectation' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.expectation.impl' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.formatting' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.lexer' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.lib' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.parameter' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.parser.antlr' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.parser.antlr.internal' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.parser.antlr.lexer' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.registry' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.runner' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.scoping' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.serializer' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.services' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.setup' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.state' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.text' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.util' version='0.0.0'/>
-        <provided namespace='java.package' name='org.eclipse.xpect.validation' version='0.0.0'/>
-        <provided namespace='osgi.identity' name='org.eclipse.xpect' version='0.2.0.202201060752'>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.source' version='0.2.0.202201060752'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.xpect.source' version='0.2.0.202201060752'/>
+        <provided namespace='osgi.identity' name='org.eclipse.xpect.source' version='0.2.0.202201060752'>
           <properties size='1'>
             <property name='type' value='osgi.bundle'/>
           </properties>
         </provided>
-        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='source' version='1.0.0'/>
         <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
       </provides>
-      <requires size='22'>
-        <required namespace='osgi.bundle' name='org.apache.log4j' range='1.2.0'/>
-        <required namespace='osgi.bundle' name='org.junit' range='4.11.0'/>
-        <required namespace='osgi.bundle' name='org.antlr.runtime' range='3.2.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext' range='2.9.2'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.util' range='2.9.2'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='2.7.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.common' range='2.7.0'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.common.types' range='2.9.2'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.generator' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='osgi.bundle' name='org.apache.commons.logging' range='1.0.4' optional='true' greedy='false'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.codegen.ecore' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.mwe.utils' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='osgi.bundle' name='org.eclipse.emf.mwe2.launch' range='0.0.0' optional='true' greedy='false'/>
-        <required namespace='osgi.bundle' name='de.itemis.statefullexer' range='1.0.0' optional='true' greedy='false'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.ecore' range='2.9.2' optional='true' greedy='false'/>
-        <required namespace='osgi.bundle' name='org.objectweb.asm' range='[3.0.0,10.0.0)' optional='true' greedy='false'/>
-        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='3.0.0' optional='true' greedy='false'/>
-        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='3.0.0' optional='true' greedy='false'/>
-        <required namespace='osgi.bundle' name='io.github.classgraph' range='4.8.35'/>
-        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='0.0.0'/>
-        <required namespace='java.package' name='org.apache.log4j' range='0.0.0'/>
-        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
-      </requires>
       <artifacts size='1'>
-        <artifact classifier='osgi.bundle' id='org.eclipse.xpect' version='0.2.0.202201060752'/>
+        <artifact classifier='osgi.bundle' id='org.eclipse.xpect.source' version='0.2.0.202201060752'/>
       </artifacts>
       <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-SymbolicName: org.eclipse.xpect;singleton:=true&#xA;Bundle-Version: 0.2.0.202201060752&#xA;
+            Bundle-SymbolicName: org.eclipse.xpect.source&#xA;Bundle-Version: 0.2.0.202201060752&#xA;
           </instruction>
         </instructions>
       </touchpointData>
+    </unit>
+    <unit id='io.github.classgraph.source' version='4.8.35.v20190528-1517' singleton='false'>
+      <update id='io.github.classgraph.source' range='[0.0.0,4.8.35.v20190528-1517)' severity='0'/>
+      <properties size='4'>
+        <property name='df_LT.bundleVendor' value='Eclipse Orbit'/>
+        <property name='df_LT.bundleName' value='ClassGraph Source'/>
+        <property name='org.eclipse.equinox.p2.name' value='%bundleName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%bundleVendor'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='io.github.classgraph.source' version='4.8.35.v20190528-1517'/>
+        <provided namespace='osgi.bundle' name='io.github.classgraph.source' version='4.8.35.v20190528-1517'/>
+        <provided namespace='osgi.identity' name='io.github.classgraph.source' version='4.8.35.v20190528-1517'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='source' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='io.github.classgraph.source' version='4.8.35.v20190528-1517'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: io.github.classgraph.source&#xA;Bundle-Version: 4.8.35.v20190528-1517&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.xpect.ui.junit' version='0.2.0.202201060752' generation='2'>
+      <update id='org.eclipse.xpect.ui.junit' range='[0.0.0,0.2.0.202201060752)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Junit'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.ui.junit' version='0.2.0.202201060752'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.xpect.ui.junit' version='0.2.0.202201060752'/>
+        <provided namespace='osgi.identity' name='org.eclipse.xpect.ui.junit' version='0.2.0.202201060752'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='19'>
+        <required namespace='osgi.bundle' name='org.eclipse.xpect' range='[0.2.0,0.2.1)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xpect.ui' range='[0.2.0,0.2.1)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='3.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='3.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui.shared' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.builder' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.antlr.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.common.types.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui.codetemplates.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.compare' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.junit' range='3.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.junit.runtime' range='3.4.300'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.launching' range='3.6.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='3.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='3.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.pde.ui' range='3.6.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.xpect.ui.junit' version='0.2.0.202201060752'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.eclipse.xpect.ui.junit;singleton:=true&#xA;Bundle-Version: 0.2.0.202201060752&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.xpect.xtext.lib.feature.feature.jar' version='0.2.0.202201060752'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Xpect Test Library Feature'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='df_LT.license' value='Eclipse Foundation Software User Agreement&#xA;&#xA;November 22, 2017&#xA;&#xA;Usage Of Content&#xA;&#xA;THE ECLIPSE FOUNDATION MAKES AVAILABLE SOFTWARE, DOCUMENTATION, INFORMATION&#xA;AND/OR OTHER MATERIALS FOR OPEN SOURCE PROJECTS (COLLECTIVELY &quot;CONTENT&quot;). USE OF&#xA;THE CONTENT IS GOVERNED BY THE TERMS AND CONDITIONS OF THIS AGREEMENT AND/OR THE&#xA;TERMS AND CONDITIONS OF LICENSE AGREEMENTS OR NOTICES INDICATED OR REFERENCED&#xA;BELOW. BY USING THE CONTENT, YOU AGREE THAT YOUR USE OF THE CONTENT IS GOVERNED&#xA;BY THIS AGREEMENT AND/OR THE TERMS AND CONDITIONS OF ANY APPLICABLE LICENSE&#xA;AGREEMENTS OR NOTICES INDICATED OR REFERENCED BELOW. IF YOU DO NOT AGREE TO THE&#xA;TERMS AND CONDITIONS OF THIS AGREEMENT AND THE TERMS AND CONDITIONS OF ANY&#xA;APPLICABLE LICENSE AGREEMENTS OR NOTICES INDICATED OR REFERENCED BELOW, THEN YOU&#xA;MAY NOT USE THE CONTENT.&#xA;&#xA;Applicable Licenses&#xA;&#xA;Unless otherwise indicated, all Content made available by the Eclipse Foundation&#xA;is provided to you under the terms and conditions of the Eclipse Public License&#xA;Version 2.0 (&quot;EPL&quot;). A copy of the EPL is provided with this Content and is also&#xA;available at http://www.eclipse.org/legal/epl-2.0. For purposes of the EPL,&#xA;&quot;Program&quot; will mean the Content.&#xA;&#xA;Content includes, but is not limited to, source code, object code, documentation&#xA;and other files maintained in the Eclipse Foundation source code repository&#xA;(&quot;Repository&quot;) in software modules (&quot;Modules&quot;) and made available as&#xA;downloadable archives (&quot;Downloads&quot;).&#xA;&#xA;-   Content may be structured and packaged into modules to facilitate&#xA;delivering, extending, and upgrading the Content. Typical modules may&#xA;include plug-ins (&quot;Plug-ins&quot;), plug-in fragments (&quot;Fragments&quot;), and&#xA;features (&quot;Features&quot;).&#xA;-   Each Plug-in or Fragment may be packaged as a sub-directory or JAR&#xA;(Java™ ARchive) in a directory named &quot;plugins&quot;.&#xA;-   A Feature is a bundle of one or more Plug-ins and/or Fragments and&#xA;associated material. Each Feature may be packaged as a sub-directory in a&#xA;directory named &quot;features&quot;. Within a Feature, files named &quot;feature.xml&quot; may&#xA;contain a list of the names and version numbers of the Plug-ins and/or&#xA;Fragments associated with that Feature.&#xA;-   Features may also include other Features (&quot;Included Features&quot;). Within a&#xA;Feature, files named &quot;feature.xml&quot; may contain a list of the names and&#xA;version numbers of Included Features.&#xA;&#xA;The terms and conditions governing Plug-ins and Fragments should be contained in&#xA;files named &quot;about.html&quot; (&quot;Abouts&quot;). The terms and conditions governing Features&#xA;and Included Features should be contained in files named &quot;license.html&quot;&#xA;(&quot;Feature Licenses&quot;). Abouts and Feature Licenses may be located in any&#xA;directory of a Download or Module including, but not limited to the following&#xA;locations:&#xA;&#xA;-   The top-level (root) directory&#xA;-   Plug-in and Fragment directories&#xA;-   Inside Plug-ins and Fragments packaged as JARs&#xA;-   Sub-directories of the directory named &quot;src&quot; of certain Plug-ins&#xA;-   Feature directories&#xA;&#xA;Note: if a Feature made available by the Eclipse Foundation is installed using&#xA;the Provisioning Technology (as defined below), you must agree to a license&#xA;(&quot;Feature Update License&quot;) during the installation process. If the Feature&#xA;contains Included Features, the Feature Update License should either provide you&#xA;with the terms and conditions governing the Included Features or inform you&#xA;where you can locate them. Feature Update Licenses may be found in the &quot;license&quot;&#xA;property of files named &quot;feature.properties&quot; found within a Feature. Such&#xA;Abouts, Feature Licenses, and Feature Update Licenses contain the terms and&#xA;conditions (or references to such terms and conditions) that govern your use of&#xA;the associated Content in that directory.&#xA;&#xA;THE ABOUTS, FEATURE LICENSES, AND FEATURE UPDATE LICENSES MAY REFER TO THE EPL&#xA;OR OTHER LICENSE AGREEMENTS, NOTICES OR TERMS AND CONDITIONS. SOME OF THESE&#xA;OTHER LICENSE AGREEMENTS MAY INCLUDE (BUT ARE NOT LIMITED TO):&#xA;&#xA;-   Eclipse Public License Version 1.0 (available at&#xA;http://www.eclipse.org/legal/epl-v10.html)&#xA;-   Eclipse Distribution License Version 1.0 (available at&#xA;http://www.eclipse.org/licenses/edl-v1.0.html)&#xA;-   Common Public License Version 1.0 (available at&#xA;http://www.eclipse.org/legal/cpl-v10.html)&#xA;-   Apache Software License 1.1 (available at&#xA;http://www.apache.org/licenses/LICENSE)&#xA;-   Apache Software License 2.0 (available at&#xA;http://www.apache.org/licenses/LICENSE-2.0)&#xA;-   Mozilla Public License Version 1.1 (available at&#xA;http://www.mozilla.org/MPL/MPL-1.1.html)&#xA;&#xA;IT IS YOUR OBLIGATION TO READ AND ACCEPT ALL SUCH TERMS AND CONDITIONS PRIOR TO&#xA;USE OF THE CONTENT. If no About, Feature License, or Feature Update License is&#xA;provided, please contact the Eclipse Foundation to determine what terms and&#xA;conditions govern that particular Content.&#xA;&#xA;Use of Provisioning Technology&#xA;&#xA;The Eclipse Foundation makes available provisioning software, examples of which&#xA;include, but are not limited to, p2 and the Eclipse Update Manager&#xA;(&quot;Provisioning Technology&quot;) for the purpose of allowing users to install&#xA;software, documentation, information and/or other materials (collectively&#xA;&quot;Installable Software&quot;). This capability is provided with the intent of allowing&#xA;such users to install, extend and update Eclipse-based products. Information&#xA;about packaging Installable Software is available at&#xA;http://eclipse.org/equinox/p2/repository_packaging.html (&quot;Specification&quot;).&#xA;&#xA;You may use Provisioning Technology to allow other parties to install&#xA;Installable Software. You shall be responsible for enabling the applicable&#xA;license agreements relating to the Installable Software to be presented to, and&#xA;accepted by, the users of the Provisioning Technology in accordance with the&#xA;Specification. By using Provisioning Technology in such a manner and making it&#xA;available in accordance with the Specification, you further acknowledge your&#xA;agreement to, and the acquisition of all necessary rights to permit the&#xA;following:&#xA;&#xA;1.  A series of actions may occur (&quot;Provisioning Process&quot;) in which a user may&#xA;execute the Provisioning Technology on a machine (&quot;Target Machine&quot;) with the&#xA;intent of installing, extending or updating the functionality of an&#xA;Eclipse-based product.&#xA;2.  During the Provisioning Process, the Provisioning Technology may cause third&#xA;party Installable Software or a portion thereof to be accessed and copied to&#xA;the Target Machine.&#xA;3.  Pursuant to the Specification, you will provide to the user the terms and&#xA;conditions that govern the use of the Installable Software (&quot;Installable&#xA;Software Agreement&quot;) and such Installable Software Agreement shall be&#xA;accessed from the Target Machine in accordance with the Specification. Such&#xA;Installable Software Agreement must inform the user of the terms and&#xA;conditions that govern the Installable Software and must solicit acceptance&#xA;by the end user in the manner prescribed in such Installable&#xA;Software Agreement. Upon such indication of agreement by the user, the&#xA;provisioning Technology will complete installation of the&#xA;Installable Software.&#xA;&#xA;Cryptography&#xA;&#xA;Content may contain encryption software. The country in which you are currently&#xA;may have restrictions on the import, possession, and use, and/or re-export to&#xA;another country, of encryption software. BEFORE using any encryption software,&#xA;please check the country&apos;s laws, regulations and policies concerning the import,&#xA;possession, or use, and re-export of encryption software, to see if this is&#xA;permitted.&#xA;&#xA;Java and all Java-based trademarks are trademarks of Oracle Corporation in the&#xA;United States, other countries, or both.&#xA;'/>
+        <property name='df_LT.providerName' value='Eclipse Xpect Project'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.xtext.lib.feature.feature.jar' version='0.2.0.202201060752'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='org.eclipse.xpect.xtext.lib.feature' version='0.2.0.202201060752'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='org.eclipse.xpect.xtext.lib.feature' version='0.2.0.202201060752'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='%25licenseURL' url='%25licenseURL'>
+          %license
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2012-2017 TypeFox GmbH and itemis AG.&#xA;This program and the accompanying materials are made&#xA;available under the terms of the Eclipse Public License 2.0&#xA;which is available at https://www.eclipse.org/legal/epl-2.0/&#xA;SPDX-License-Identifier: EPL-2.0&#xA;&#xA;Contributors:&#xA;  Moritz Eysholdt - Initial contribution and API
+      </copyright>
+    </unit>
+    <unit id='org.eclipse.xpect.xtext.xbase.lib.feature.feature.jar' version='0.2.0.202201060752'>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='Xpect Xbase Test Library Feature'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='df_LT.license' value='Eclipse Foundation Software User Agreement&#xA;&#xA;November 22, 2017&#xA;&#xA;Usage Of Content&#xA;&#xA;THE ECLIPSE FOUNDATION MAKES AVAILABLE SOFTWARE, DOCUMENTATION, INFORMATION&#xA;AND/OR OTHER MATERIALS FOR OPEN SOURCE PROJECTS (COLLECTIVELY &quot;CONTENT&quot;). USE OF&#xA;THE CONTENT IS GOVERNED BY THE TERMS AND CONDITIONS OF THIS AGREEMENT AND/OR THE&#xA;TERMS AND CONDITIONS OF LICENSE AGREEMENTS OR NOTICES INDICATED OR REFERENCED&#xA;BELOW. BY USING THE CONTENT, YOU AGREE THAT YOUR USE OF THE CONTENT IS GOVERNED&#xA;BY THIS AGREEMENT AND/OR THE TERMS AND CONDITIONS OF ANY APPLICABLE LICENSE&#xA;AGREEMENTS OR NOTICES INDICATED OR REFERENCED BELOW. IF YOU DO NOT AGREE TO THE&#xA;TERMS AND CONDITIONS OF THIS AGREEMENT AND THE TERMS AND CONDITIONS OF ANY&#xA;APPLICABLE LICENSE AGREEMENTS OR NOTICES INDICATED OR REFERENCED BELOW, THEN YOU&#xA;MAY NOT USE THE CONTENT.&#xA;&#xA;Applicable Licenses&#xA;&#xA;Unless otherwise indicated, all Content made available by the Eclipse Foundation&#xA;is provided to you under the terms and conditions of the Eclipse Public License&#xA;Version 2.0 (&quot;EPL&quot;). A copy of the EPL is provided with this Content and is also&#xA;available at http://www.eclipse.org/legal/epl-2.0. For purposes of the EPL,&#xA;&quot;Program&quot; will mean the Content.&#xA;&#xA;Content includes, but is not limited to, source code, object code, documentation&#xA;and other files maintained in the Eclipse Foundation source code repository&#xA;(&quot;Repository&quot;) in software modules (&quot;Modules&quot;) and made available as&#xA;downloadable archives (&quot;Downloads&quot;).&#xA;&#xA;-   Content may be structured and packaged into modules to facilitate&#xA;delivering, extending, and upgrading the Content. Typical modules may&#xA;include plug-ins (&quot;Plug-ins&quot;), plug-in fragments (&quot;Fragments&quot;), and&#xA;features (&quot;Features&quot;).&#xA;-   Each Plug-in or Fragment may be packaged as a sub-directory or JAR&#xA;(Java™ ARchive) in a directory named &quot;plugins&quot;.&#xA;-   A Feature is a bundle of one or more Plug-ins and/or Fragments and&#xA;associated material. Each Feature may be packaged as a sub-directory in a&#xA;directory named &quot;features&quot;. Within a Feature, files named &quot;feature.xml&quot; may&#xA;contain a list of the names and version numbers of the Plug-ins and/or&#xA;Fragments associated with that Feature.&#xA;-   Features may also include other Features (&quot;Included Features&quot;). Within a&#xA;Feature, files named &quot;feature.xml&quot; may contain a list of the names and&#xA;version numbers of Included Features.&#xA;&#xA;The terms and conditions governing Plug-ins and Fragments should be contained in&#xA;files named &quot;about.html&quot; (&quot;Abouts&quot;). The terms and conditions governing Features&#xA;and Included Features should be contained in files named &quot;license.html&quot;&#xA;(&quot;Feature Licenses&quot;). Abouts and Feature Licenses may be located in any&#xA;directory of a Download or Module including, but not limited to the following&#xA;locations:&#xA;&#xA;-   The top-level (root) directory&#xA;-   Plug-in and Fragment directories&#xA;-   Inside Plug-ins and Fragments packaged as JARs&#xA;-   Sub-directories of the directory named &quot;src&quot; of certain Plug-ins&#xA;-   Feature directories&#xA;&#xA;Note: if a Feature made available by the Eclipse Foundation is installed using&#xA;the Provisioning Technology (as defined below), you must agree to a license&#xA;(&quot;Feature Update License&quot;) during the installation process. If the Feature&#xA;contains Included Features, the Feature Update License should either provide you&#xA;with the terms and conditions governing the Included Features or inform you&#xA;where you can locate them. Feature Update Licenses may be found in the &quot;license&quot;&#xA;property of files named &quot;feature.properties&quot; found within a Feature. Such&#xA;Abouts, Feature Licenses, and Feature Update Licenses contain the terms and&#xA;conditions (or references to such terms and conditions) that govern your use of&#xA;the associated Content in that directory.&#xA;&#xA;THE ABOUTS, FEATURE LICENSES, AND FEATURE UPDATE LICENSES MAY REFER TO THE EPL&#xA;OR OTHER LICENSE AGREEMENTS, NOTICES OR TERMS AND CONDITIONS. SOME OF THESE&#xA;OTHER LICENSE AGREEMENTS MAY INCLUDE (BUT ARE NOT LIMITED TO):&#xA;&#xA;-   Eclipse Public License Version 1.0 (available at&#xA;http://www.eclipse.org/legal/epl-v10.html)&#xA;-   Eclipse Distribution License Version 1.0 (available at&#xA;http://www.eclipse.org/licenses/edl-v1.0.html)&#xA;-   Common Public License Version 1.0 (available at&#xA;http://www.eclipse.org/legal/cpl-v10.html)&#xA;-   Apache Software License 1.1 (available at&#xA;http://www.apache.org/licenses/LICENSE)&#xA;-   Apache Software License 2.0 (available at&#xA;http://www.apache.org/licenses/LICENSE-2.0)&#xA;-   Mozilla Public License Version 1.1 (available at&#xA;http://www.mozilla.org/MPL/MPL-1.1.html)&#xA;&#xA;IT IS YOUR OBLIGATION TO READ AND ACCEPT ALL SUCH TERMS AND CONDITIONS PRIOR TO&#xA;USE OF THE CONTENT. If no About, Feature License, or Feature Update License is&#xA;provided, please contact the Eclipse Foundation to determine what terms and&#xA;conditions govern that particular Content.&#xA;&#xA;Use of Provisioning Technology&#xA;&#xA;The Eclipse Foundation makes available provisioning software, examples of which&#xA;include, but are not limited to, p2 and the Eclipse Update Manager&#xA;(&quot;Provisioning Technology&quot;) for the purpose of allowing users to install&#xA;software, documentation, information and/or other materials (collectively&#xA;&quot;Installable Software&quot;). This capability is provided with the intent of allowing&#xA;such users to install, extend and update Eclipse-based products. Information&#xA;about packaging Installable Software is available at&#xA;http://eclipse.org/equinox/p2/repository_packaging.html (&quot;Specification&quot;).&#xA;&#xA;You may use Provisioning Technology to allow other parties to install&#xA;Installable Software. You shall be responsible for enabling the applicable&#xA;license agreements relating to the Installable Software to be presented to, and&#xA;accepted by, the users of the Provisioning Technology in accordance with the&#xA;Specification. By using Provisioning Technology in such a manner and making it&#xA;available in accordance with the Specification, you further acknowledge your&#xA;agreement to, and the acquisition of all necessary rights to permit the&#xA;following:&#xA;&#xA;1.  A series of actions may occur (&quot;Provisioning Process&quot;) in which a user may&#xA;execute the Provisioning Technology on a machine (&quot;Target Machine&quot;) with the&#xA;intent of installing, extending or updating the functionality of an&#xA;Eclipse-based product.&#xA;2.  During the Provisioning Process, the Provisioning Technology may cause third&#xA;party Installable Software or a portion thereof to be accessed and copied to&#xA;the Target Machine.&#xA;3.  Pursuant to the Specification, you will provide to the user the terms and&#xA;conditions that govern the use of the Installable Software (&quot;Installable&#xA;Software Agreement&quot;) and such Installable Software Agreement shall be&#xA;accessed from the Target Machine in accordance with the Specification. Such&#xA;Installable Software Agreement must inform the user of the terms and&#xA;conditions that govern the Installable Software and must solicit acceptance&#xA;by the end user in the manner prescribed in such Installable&#xA;Software Agreement. Upon such indication of agreement by the user, the&#xA;provisioning Technology will complete installation of the&#xA;Installable Software.&#xA;&#xA;Cryptography&#xA;&#xA;Content may contain encryption software. The country in which you are currently&#xA;may have restrictions on the import, possession, and use, and/or re-export to&#xA;another country, of encryption software. BEFORE using any encryption software,&#xA;please check the country&apos;s laws, regulations and policies concerning the import,&#xA;possession, or use, and re-export of encryption software, to see if this is&#xA;permitted.&#xA;&#xA;Java and all Java-based trademarks are trademarks of Oracle Corporation in the&#xA;United States, other countries, or both.&#xA;'/>
+        <property name='df_LT.providerName' value='Eclipse Xpect Project'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.xtext.xbase.lib.feature.feature.jar' version='0.2.0.202201060752'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='org.eclipse.xpect.xtext.xbase.lib.feature' version='0.2.0.202201060752'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='org.eclipse.xpect.xtext.xbase.lib.feature' version='0.2.0.202201060752'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='%25licenseURL' url='%25licenseURL'>
+          %license
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2012-2017 TypeFox GmbH and itemis AG.&#xA;This program and the accompanying materials are made&#xA;available under the terms of the Eclipse Public License 2.0&#xA;which is available at https://www.eclipse.org/legal/epl-2.0/&#xA;SPDX-License-Identifier: EPL-2.0&#xA;&#xA;Contributors:&#xA;  Moritz Eysholdt - Initial contribution and API
+      </copyright>
     </unit>
     <unit id='org.eclipse.xpect.xtext.lib' version='0.2.0.202201060752' singleton='false' generation='2'>
       <update id='org.eclipse.xpect.xtext.lib' range='[0.0.0,0.2.0.202201060752)' severity='0'/>
@@ -166,6 +272,561 @@
         <instructions size='1'>
           <instruction key='manifest'>
             Bundle-SymbolicName: org.eclipse.xpect.xtext.xbase.lib&#xA;Bundle-Version: 0.2.0.202201060752&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.xpect.ui.source' version='0.2.0.202201060752' singleton='false'>
+      <update id='org.eclipse.xpect.ui.source' range='[0.0.0,0.2.0.202201060752)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.bundleVendor' value='Eclipse Xpect Project'/>
+        <property name='df_LT.bundleName' value='org.eclipse.xpect.ui Source'/>
+        <property name='org.eclipse.equinox.p2.name' value='%bundleName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%bundleVendor'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='OSGI-INF/l10n/bundle-src'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.ui.source' version='0.2.0.202201060752'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.xpect.ui.source' version='0.2.0.202201060752'/>
+        <provided namespace='osgi.identity' name='org.eclipse.xpect.ui.source' version='0.2.0.202201060752'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='source' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.xpect.ui.source' version='0.2.0.202201060752'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.eclipse.xpect.ui.source&#xA;Bundle-Version: 0.2.0.202201060752&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.hamcrest.core.source' version='1.3.0.v201303031735' singleton='false'>
+      <update id='org.hamcrest.core.source' range='[0.0.0,1.3.0.v201303031735)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.pluginName' value='Hamcrest Core Library of Matchers Source'/>
+        <property name='df_LT.providerName' value='Eclipse Orbit'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.hamcrest.core.source' version='1.3.0.v201303031735'/>
+        <provided namespace='osgi.bundle' name='org.hamcrest.core.source' version='1.3.0.v201303031735'/>
+        <provided namespace='osgi.identity' name='org.hamcrest.core.source' version='1.3.0.v201303031735'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='source' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.hamcrest.core.source' version='1.3.0.v201303031735'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.hamcrest.core.source&#xA;Bundle-Version: 1.3.0.v201303031735&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.xpect' version='0.2.0.202201060752' generation='2'>
+      <update id='org.eclipse.xpect' range='[0.0.0,0.2.0.202201060752)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.pluginName' value='org.eclipse.xpect'/>
+        <property name='df_LT.providerName' value='Eclipse Xpect Project'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='25'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect' version='0.2.0.202201060752'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.xpect' version='0.2.0.202201060752'/>
+        <provided namespace='java.package' name='org.eclipse.xpect' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.expectation' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.expectation.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.formatting' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.lexer' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.lib' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.parameter' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.parser.antlr' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.parser.antlr.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.parser.antlr.lexer' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.registry' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.runner' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.scoping' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.serializer' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.services' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.setup' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.state' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.text' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.validation' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='org.eclipse.xpect' version='0.2.0.202201060752'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='22'>
+        <required namespace='osgi.bundle' name='org.apache.log4j' range='1.2.0'/>
+        <required namespace='osgi.bundle' name='org.junit' range='4.11.0'/>
+        <required namespace='osgi.bundle' name='org.antlr.runtime' range='3.2.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext' range='2.9.2'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.util' range='2.9.2'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='2.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.common' range='2.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.common.types' range='2.9.2'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.generator' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.apache.commons.logging' range='1.0.4' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.codegen.ecore' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.mwe.utils' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.mwe2.launch' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='de.itemis.statefullexer' range='1.0.0' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ecore' range='2.9.2' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.objectweb.asm' range='[3.0.0,10.0.0)' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.eclipse.equinox.common' range='3.0.0' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='3.0.0' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='io.github.classgraph' range='4.8.35'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.xbase.lib' range='0.0.0'/>
+        <required namespace='java.package' name='org.apache.log4j' range='0.0.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.xpect' version='0.2.0.202201060752'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.eclipse.xpect;singleton:=true&#xA;Bundle-Version: 0.2.0.202201060752&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='io.github.classgraph' version='4.8.35.v20190528-1517' singleton='false' generation='2'>
+      <update id='io.github.classgraph' range='[0.0.0,4.8.35.v20190528-1517)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.bundleVendor' value='Eclipse Orbit'/>
+        <property name='df_LT.bundleName' value='ClassGraph'/>
+        <property name='org.eclipse.equinox.p2.name' value='%bundleName'/>
+        <property name='org.eclipse.equinox.p2.description' value='The uber-fast, ultra-lightweight classpath and module scanner for JVM languages.'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%bundleVendor'/>
+      </properties>
+      <provides size='15'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='io.github.classgraph' version='4.8.35.v20190528-1517'/>
+        <provided namespace='osgi.bundle' name='io.github.classgraph' version='4.8.35.v20190528-1517'/>
+        <provided namespace='java.package' name='nonapi.io.github.classgraph.classloaderhandler' version='4.8.35'/>
+        <provided namespace='java.package' name='nonapi.io.github.classgraph.classpath' version='4.8.35'/>
+        <provided namespace='java.package' name='nonapi.io.github.classgraph.concurrency' version='4.8.35'/>
+        <provided namespace='java.package' name='nonapi.io.github.classgraph.fastzipfilereader' version='4.8.35'/>
+        <provided namespace='java.package' name='nonapi.io.github.classgraph.json' version='4.8.35'/>
+        <provided namespace='java.package' name='nonapi.io.github.classgraph.recycler' version='4.8.35'/>
+        <provided namespace='java.package' name='nonapi.io.github.classgraph.scanspec' version='4.8.35'/>
+        <provided namespace='java.package' name='nonapi.io.github.classgraph.types' version='4.8.35'/>
+        <provided namespace='java.package' name='nonapi.io.github.classgraph.utils' version='4.8.35'/>
+        <provided namespace='java.package' name='io.github.classgraph' version='4.8.35'/>
+        <provided namespace='osgi.identity' name='io.github.classgraph' version='4.8.35.v20190528-1517'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='15'>
+        <required namespace='java.package' name='io.github.classgraph' range='[4.8.0,5.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.xml.namespace' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.xml.parsers' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='javax.xml.xpath' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='java.package' name='nonapi.io.github.classgraph.classloaderhandler' range='[4.8.0,5.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='nonapi.io.github.classgraph.classpath' range='[4.8.0,5.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='nonapi.io.github.classgraph.concurrency' range='[4.8.0,5.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='nonapi.io.github.classgraph.fastzipfilereader' range='[4.8.0,5.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='nonapi.io.github.classgraph.json' range='[4.8.0,5.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='nonapi.io.github.classgraph.recycler' range='[4.8.0,5.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='nonapi.io.github.classgraph.scanspec' range='[4.8.0,5.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='nonapi.io.github.classgraph.types' range='[4.8.0,5.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='nonapi.io.github.classgraph.utils' range='[4.8.0,5.0.0)' optional='true' greedy='false'/>
+        <required namespace='java.package' name='org.w3c.dom' range='0.0.0' optional='true' greedy='false'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.7))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='io.github.classgraph' version='4.8.35.v20190528-1517'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: io.github.classgraph&#xA;Bundle-Version: 4.8.35.v20190528-1517&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.junit' version='4.11.0.v201303080030' singleton='false' generation='2'>
+      <update id='org.junit' range='[0.0.0,4.11.0.v201303080030)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.pluginName' value='JUnit Testing Framework'/>
+        <property name='df_LT.providerName' value='Eclipse Orbit'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='33'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.junit' version='4.11.0.v201303080030'/>
+        <provided namespace='osgi.bundle' name='org.junit' version='4.11.0.v201303080030'/>
+        <provided namespace='java.package' name='junit.extensions' version='4.11.0'/>
+        <provided namespace='java.package' name='junit.framework' version='4.11.0'/>
+        <provided namespace='java.package' name='junit.runner' version='4.11.0'/>
+        <provided namespace='java.package' name='junit.textui' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.experimental' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.experimental.categories' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.experimental.max' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.experimental.results' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.experimental.runners' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.experimental.theories' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.experimental.theories.internal' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.experimental.theories.suppliers' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.internal' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.internal.builders' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.internal.matchers' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.internal.requests' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.internal.runners' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.internal.runners.model' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.internal.runners.rules' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.internal.runners.statements' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.matchers' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.rules' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.runner' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.runner.manipulation' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.runner.notification' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.runners' version='4.11.0'/>
+        <provided namespace='java.package' name='org.junit.runners.model' version='4.11.0'/>
+        <provided namespace='osgi.identity' name='org.junit' version='4.11.0.v201303080030'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.hamcrest.core' range='1.3.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.5))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.junit' version='4.11.0.v201303080030'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.junit&#xA;Bundle-Version: 4.11.0.v201303080030&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.hamcrest.core' version='1.3.0.v201303031735' singleton='false' generation='2'>
+      <update id='org.hamcrest.core' range='[0.0.0,1.3.0.v201303031735)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.pluginName' value='Hamcrest Core Library of Matchers'/>
+        <property name='df_LT.providerName' value='Eclipse Orbit'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='8'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.hamcrest.core' version='1.3.0.v201303031735'/>
+        <provided namespace='osgi.bundle' name='org.hamcrest.core' version='1.3.0.v201303031735'/>
+        <provided namespace='java.package' name='org.hamcrest' version='1.3.0'/>
+        <provided namespace='java.package' name='org.hamcrest.core' version='1.3.0'/>
+        <provided namespace='java.package' name='org.hamcrest.internal' version='1.3.0'/>
+        <provided namespace='osgi.identity' name='org.hamcrest.core' version='1.3.0.v201303031735'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='1'>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.5))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.hamcrest.core' version='1.3.0.v201303031735'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.hamcrest.core&#xA;Bundle-Version: 1.3.0.v201303031735&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.xpect.xtext.xbase.lib.feature.feature.group' version='0.2.0.202201060752' singleton='false'>
+      <update id='org.eclipse.xpect.xtext.xbase.lib.feature.feature.group' range='[0.0.0,0.2.0.202201060752)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Xpect Xbase Test Library Feature'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='df_LT.license' value='Eclipse Foundation Software User Agreement&#xA;&#xA;November 22, 2017&#xA;&#xA;Usage Of Content&#xA;&#xA;THE ECLIPSE FOUNDATION MAKES AVAILABLE SOFTWARE, DOCUMENTATION, INFORMATION&#xA;AND/OR OTHER MATERIALS FOR OPEN SOURCE PROJECTS (COLLECTIVELY &quot;CONTENT&quot;). USE OF&#xA;THE CONTENT IS GOVERNED BY THE TERMS AND CONDITIONS OF THIS AGREEMENT AND/OR THE&#xA;TERMS AND CONDITIONS OF LICENSE AGREEMENTS OR NOTICES INDICATED OR REFERENCED&#xA;BELOW. BY USING THE CONTENT, YOU AGREE THAT YOUR USE OF THE CONTENT IS GOVERNED&#xA;BY THIS AGREEMENT AND/OR THE TERMS AND CONDITIONS OF ANY APPLICABLE LICENSE&#xA;AGREEMENTS OR NOTICES INDICATED OR REFERENCED BELOW. IF YOU DO NOT AGREE TO THE&#xA;TERMS AND CONDITIONS OF THIS AGREEMENT AND THE TERMS AND CONDITIONS OF ANY&#xA;APPLICABLE LICENSE AGREEMENTS OR NOTICES INDICATED OR REFERENCED BELOW, THEN YOU&#xA;MAY NOT USE THE CONTENT.&#xA;&#xA;Applicable Licenses&#xA;&#xA;Unless otherwise indicated, all Content made available by the Eclipse Foundation&#xA;is provided to you under the terms and conditions of the Eclipse Public License&#xA;Version 2.0 (&quot;EPL&quot;). A copy of the EPL is provided with this Content and is also&#xA;available at http://www.eclipse.org/legal/epl-2.0. For purposes of the EPL,&#xA;&quot;Program&quot; will mean the Content.&#xA;&#xA;Content includes, but is not limited to, source code, object code, documentation&#xA;and other files maintained in the Eclipse Foundation source code repository&#xA;(&quot;Repository&quot;) in software modules (&quot;Modules&quot;) and made available as&#xA;downloadable archives (&quot;Downloads&quot;).&#xA;&#xA;-   Content may be structured and packaged into modules to facilitate&#xA;delivering, extending, and upgrading the Content. Typical modules may&#xA;include plug-ins (&quot;Plug-ins&quot;), plug-in fragments (&quot;Fragments&quot;), and&#xA;features (&quot;Features&quot;).&#xA;-   Each Plug-in or Fragment may be packaged as a sub-directory or JAR&#xA;(Java™ ARchive) in a directory named &quot;plugins&quot;.&#xA;-   A Feature is a bundle of one or more Plug-ins and/or Fragments and&#xA;associated material. Each Feature may be packaged as a sub-directory in a&#xA;directory named &quot;features&quot;. Within a Feature, files named &quot;feature.xml&quot; may&#xA;contain a list of the names and version numbers of the Plug-ins and/or&#xA;Fragments associated with that Feature.&#xA;-   Features may also include other Features (&quot;Included Features&quot;). Within a&#xA;Feature, files named &quot;feature.xml&quot; may contain a list of the names and&#xA;version numbers of Included Features.&#xA;&#xA;The terms and conditions governing Plug-ins and Fragments should be contained in&#xA;files named &quot;about.html&quot; (&quot;Abouts&quot;). The terms and conditions governing Features&#xA;and Included Features should be contained in files named &quot;license.html&quot;&#xA;(&quot;Feature Licenses&quot;). Abouts and Feature Licenses may be located in any&#xA;directory of a Download or Module including, but not limited to the following&#xA;locations:&#xA;&#xA;-   The top-level (root) directory&#xA;-   Plug-in and Fragment directories&#xA;-   Inside Plug-ins and Fragments packaged as JARs&#xA;-   Sub-directories of the directory named &quot;src&quot; of certain Plug-ins&#xA;-   Feature directories&#xA;&#xA;Note: if a Feature made available by the Eclipse Foundation is installed using&#xA;the Provisioning Technology (as defined below), you must agree to a license&#xA;(&quot;Feature Update License&quot;) during the installation process. If the Feature&#xA;contains Included Features, the Feature Update License should either provide you&#xA;with the terms and conditions governing the Included Features or inform you&#xA;where you can locate them. Feature Update Licenses may be found in the &quot;license&quot;&#xA;property of files named &quot;feature.properties&quot; found within a Feature. Such&#xA;Abouts, Feature Licenses, and Feature Update Licenses contain the terms and&#xA;conditions (or references to such terms and conditions) that govern your use of&#xA;the associated Content in that directory.&#xA;&#xA;THE ABOUTS, FEATURE LICENSES, AND FEATURE UPDATE LICENSES MAY REFER TO THE EPL&#xA;OR OTHER LICENSE AGREEMENTS, NOTICES OR TERMS AND CONDITIONS. SOME OF THESE&#xA;OTHER LICENSE AGREEMENTS MAY INCLUDE (BUT ARE NOT LIMITED TO):&#xA;&#xA;-   Eclipse Public License Version 1.0 (available at&#xA;http://www.eclipse.org/legal/epl-v10.html)&#xA;-   Eclipse Distribution License Version 1.0 (available at&#xA;http://www.eclipse.org/licenses/edl-v1.0.html)&#xA;-   Common Public License Version 1.0 (available at&#xA;http://www.eclipse.org/legal/cpl-v10.html)&#xA;-   Apache Software License 1.1 (available at&#xA;http://www.apache.org/licenses/LICENSE)&#xA;-   Apache Software License 2.0 (available at&#xA;http://www.apache.org/licenses/LICENSE-2.0)&#xA;-   Mozilla Public License Version 1.1 (available at&#xA;http://www.mozilla.org/MPL/MPL-1.1.html)&#xA;&#xA;IT IS YOUR OBLIGATION TO READ AND ACCEPT ALL SUCH TERMS AND CONDITIONS PRIOR TO&#xA;USE OF THE CONTENT. If no About, Feature License, or Feature Update License is&#xA;provided, please contact the Eclipse Foundation to determine what terms and&#xA;conditions govern that particular Content.&#xA;&#xA;Use of Provisioning Technology&#xA;&#xA;The Eclipse Foundation makes available provisioning software, examples of which&#xA;include, but are not limited to, p2 and the Eclipse Update Manager&#xA;(&quot;Provisioning Technology&quot;) for the purpose of allowing users to install&#xA;software, documentation, information and/or other materials (collectively&#xA;&quot;Installable Software&quot;). This capability is provided with the intent of allowing&#xA;such users to install, extend and update Eclipse-based products. Information&#xA;about packaging Installable Software is available at&#xA;http://eclipse.org/equinox/p2/repository_packaging.html (&quot;Specification&quot;).&#xA;&#xA;You may use Provisioning Technology to allow other parties to install&#xA;Installable Software. You shall be responsible for enabling the applicable&#xA;license agreements relating to the Installable Software to be presented to, and&#xA;accepted by, the users of the Provisioning Technology in accordance with the&#xA;Specification. By using Provisioning Technology in such a manner and making it&#xA;available in accordance with the Specification, you further acknowledge your&#xA;agreement to, and the acquisition of all necessary rights to permit the&#xA;following:&#xA;&#xA;1.  A series of actions may occur (&quot;Provisioning Process&quot;) in which a user may&#xA;execute the Provisioning Technology on a machine (&quot;Target Machine&quot;) with the&#xA;intent of installing, extending or updating the functionality of an&#xA;Eclipse-based product.&#xA;2.  During the Provisioning Process, the Provisioning Technology may cause third&#xA;party Installable Software or a portion thereof to be accessed and copied to&#xA;the Target Machine.&#xA;3.  Pursuant to the Specification, you will provide to the user the terms and&#xA;conditions that govern the use of the Installable Software (&quot;Installable&#xA;Software Agreement&quot;) and such Installable Software Agreement shall be&#xA;accessed from the Target Machine in accordance with the Specification. Such&#xA;Installable Software Agreement must inform the user of the terms and&#xA;conditions that govern the Installable Software and must solicit acceptance&#xA;by the end user in the manner prescribed in such Installable&#xA;Software Agreement. Upon such indication of agreement by the user, the&#xA;provisioning Technology will complete installation of the&#xA;Installable Software.&#xA;&#xA;Cryptography&#xA;&#xA;Content may contain encryption software. The country in which you are currently&#xA;may have restrictions on the import, possession, and use, and/or re-export to&#xA;another country, of encryption software. BEFORE using any encryption software,&#xA;please check the country&apos;s laws, regulations and policies concerning the import,&#xA;possession, or use, and re-export of encryption software, to see if this is&#xA;permitted.&#xA;&#xA;Java and all Java-based trademarks are trademarks of Oracle Corporation in the&#xA;United States, other countries, or both.&#xA;'/>
+        <property name='df_LT.providerName' value='Eclipse Xpect Project'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.xtext.xbase.lib.feature.feature.group' version='0.2.0.202201060752'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='4'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.xtext.lib.feature.feature.group' range='[0.2.0.202201060752,0.2.0.202201060752]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.xtext.xbase.lib' range='[0.2.0.202201060752,0.2.0.202201060752]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.xtext.xbase.lib.source' range='[0.2.0.202201060752,0.2.0.202201060752]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.xtext.xbase.lib.feature.feature.jar' range='[0.2.0.202201060752,0.2.0.202201060752]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='%25licenseURL' url='%25licenseURL'>
+          %license
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2012-2017 TypeFox GmbH and itemis AG.&#xA;This program and the accompanying materials are made&#xA;available under the terms of the Eclipse Public License 2.0&#xA;which is available at https://www.eclipse.org/legal/epl-2.0/&#xA;SPDX-License-Identifier: EPL-2.0&#xA;&#xA;Contributors:&#xA;  Moritz Eysholdt - Initial contribution and API
+      </copyright>
+    </unit>
+    <unit id='org.eclipse.xpect.xtext.lib.feature.feature.group' version='0.2.0.202201060752' singleton='false'>
+      <update id='org.eclipse.xpect.xtext.lib.feature.feature.group' range='[0.0.0,0.2.0.202201060752)' severity='0'/>
+      <properties size='5'>
+        <property name='org.eclipse.equinox.p2.name' value='Xpect Test Library Feature'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='df_LT.license' value='Eclipse Foundation Software User Agreement&#xA;&#xA;November 22, 2017&#xA;&#xA;Usage Of Content&#xA;&#xA;THE ECLIPSE FOUNDATION MAKES AVAILABLE SOFTWARE, DOCUMENTATION, INFORMATION&#xA;AND/OR OTHER MATERIALS FOR OPEN SOURCE PROJECTS (COLLECTIVELY &quot;CONTENT&quot;). USE OF&#xA;THE CONTENT IS GOVERNED BY THE TERMS AND CONDITIONS OF THIS AGREEMENT AND/OR THE&#xA;TERMS AND CONDITIONS OF LICENSE AGREEMENTS OR NOTICES INDICATED OR REFERENCED&#xA;BELOW. BY USING THE CONTENT, YOU AGREE THAT YOUR USE OF THE CONTENT IS GOVERNED&#xA;BY THIS AGREEMENT AND/OR THE TERMS AND CONDITIONS OF ANY APPLICABLE LICENSE&#xA;AGREEMENTS OR NOTICES INDICATED OR REFERENCED BELOW. IF YOU DO NOT AGREE TO THE&#xA;TERMS AND CONDITIONS OF THIS AGREEMENT AND THE TERMS AND CONDITIONS OF ANY&#xA;APPLICABLE LICENSE AGREEMENTS OR NOTICES INDICATED OR REFERENCED BELOW, THEN YOU&#xA;MAY NOT USE THE CONTENT.&#xA;&#xA;Applicable Licenses&#xA;&#xA;Unless otherwise indicated, all Content made available by the Eclipse Foundation&#xA;is provided to you under the terms and conditions of the Eclipse Public License&#xA;Version 2.0 (&quot;EPL&quot;). A copy of the EPL is provided with this Content and is also&#xA;available at http://www.eclipse.org/legal/epl-2.0. For purposes of the EPL,&#xA;&quot;Program&quot; will mean the Content.&#xA;&#xA;Content includes, but is not limited to, source code, object code, documentation&#xA;and other files maintained in the Eclipse Foundation source code repository&#xA;(&quot;Repository&quot;) in software modules (&quot;Modules&quot;) and made available as&#xA;downloadable archives (&quot;Downloads&quot;).&#xA;&#xA;-   Content may be structured and packaged into modules to facilitate&#xA;delivering, extending, and upgrading the Content. Typical modules may&#xA;include plug-ins (&quot;Plug-ins&quot;), plug-in fragments (&quot;Fragments&quot;), and&#xA;features (&quot;Features&quot;).&#xA;-   Each Plug-in or Fragment may be packaged as a sub-directory or JAR&#xA;(Java™ ARchive) in a directory named &quot;plugins&quot;.&#xA;-   A Feature is a bundle of one or more Plug-ins and/or Fragments and&#xA;associated material. Each Feature may be packaged as a sub-directory in a&#xA;directory named &quot;features&quot;. Within a Feature, files named &quot;feature.xml&quot; may&#xA;contain a list of the names and version numbers of the Plug-ins and/or&#xA;Fragments associated with that Feature.&#xA;-   Features may also include other Features (&quot;Included Features&quot;). Within a&#xA;Feature, files named &quot;feature.xml&quot; may contain a list of the names and&#xA;version numbers of Included Features.&#xA;&#xA;The terms and conditions governing Plug-ins and Fragments should be contained in&#xA;files named &quot;about.html&quot; (&quot;Abouts&quot;). The terms and conditions governing Features&#xA;and Included Features should be contained in files named &quot;license.html&quot;&#xA;(&quot;Feature Licenses&quot;). Abouts and Feature Licenses may be located in any&#xA;directory of a Download or Module including, but not limited to the following&#xA;locations:&#xA;&#xA;-   The top-level (root) directory&#xA;-   Plug-in and Fragment directories&#xA;-   Inside Plug-ins and Fragments packaged as JARs&#xA;-   Sub-directories of the directory named &quot;src&quot; of certain Plug-ins&#xA;-   Feature directories&#xA;&#xA;Note: if a Feature made available by the Eclipse Foundation is installed using&#xA;the Provisioning Technology (as defined below), you must agree to a license&#xA;(&quot;Feature Update License&quot;) during the installation process. If the Feature&#xA;contains Included Features, the Feature Update License should either provide you&#xA;with the terms and conditions governing the Included Features or inform you&#xA;where you can locate them. Feature Update Licenses may be found in the &quot;license&quot;&#xA;property of files named &quot;feature.properties&quot; found within a Feature. Such&#xA;Abouts, Feature Licenses, and Feature Update Licenses contain the terms and&#xA;conditions (or references to such terms and conditions) that govern your use of&#xA;the associated Content in that directory.&#xA;&#xA;THE ABOUTS, FEATURE LICENSES, AND FEATURE UPDATE LICENSES MAY REFER TO THE EPL&#xA;OR OTHER LICENSE AGREEMENTS, NOTICES OR TERMS AND CONDITIONS. SOME OF THESE&#xA;OTHER LICENSE AGREEMENTS MAY INCLUDE (BUT ARE NOT LIMITED TO):&#xA;&#xA;-   Eclipse Public License Version 1.0 (available at&#xA;http://www.eclipse.org/legal/epl-v10.html)&#xA;-   Eclipse Distribution License Version 1.0 (available at&#xA;http://www.eclipse.org/licenses/edl-v1.0.html)&#xA;-   Common Public License Version 1.0 (available at&#xA;http://www.eclipse.org/legal/cpl-v10.html)&#xA;-   Apache Software License 1.1 (available at&#xA;http://www.apache.org/licenses/LICENSE)&#xA;-   Apache Software License 2.0 (available at&#xA;http://www.apache.org/licenses/LICENSE-2.0)&#xA;-   Mozilla Public License Version 1.1 (available at&#xA;http://www.mozilla.org/MPL/MPL-1.1.html)&#xA;&#xA;IT IS YOUR OBLIGATION TO READ AND ACCEPT ALL SUCH TERMS AND CONDITIONS PRIOR TO&#xA;USE OF THE CONTENT. If no About, Feature License, or Feature Update License is&#xA;provided, please contact the Eclipse Foundation to determine what terms and&#xA;conditions govern that particular Content.&#xA;&#xA;Use of Provisioning Technology&#xA;&#xA;The Eclipse Foundation makes available provisioning software, examples of which&#xA;include, but are not limited to, p2 and the Eclipse Update Manager&#xA;(&quot;Provisioning Technology&quot;) for the purpose of allowing users to install&#xA;software, documentation, information and/or other materials (collectively&#xA;&quot;Installable Software&quot;). This capability is provided with the intent of allowing&#xA;such users to install, extend and update Eclipse-based products. Information&#xA;about packaging Installable Software is available at&#xA;http://eclipse.org/equinox/p2/repository_packaging.html (&quot;Specification&quot;).&#xA;&#xA;You may use Provisioning Technology to allow other parties to install&#xA;Installable Software. You shall be responsible for enabling the applicable&#xA;license agreements relating to the Installable Software to be presented to, and&#xA;accepted by, the users of the Provisioning Technology in accordance with the&#xA;Specification. By using Provisioning Technology in such a manner and making it&#xA;available in accordance with the Specification, you further acknowledge your&#xA;agreement to, and the acquisition of all necessary rights to permit the&#xA;following:&#xA;&#xA;1.  A series of actions may occur (&quot;Provisioning Process&quot;) in which a user may&#xA;execute the Provisioning Technology on a machine (&quot;Target Machine&quot;) with the&#xA;intent of installing, extending or updating the functionality of an&#xA;Eclipse-based product.&#xA;2.  During the Provisioning Process, the Provisioning Technology may cause third&#xA;party Installable Software or a portion thereof to be accessed and copied to&#xA;the Target Machine.&#xA;3.  Pursuant to the Specification, you will provide to the user the terms and&#xA;conditions that govern the use of the Installable Software (&quot;Installable&#xA;Software Agreement&quot;) and such Installable Software Agreement shall be&#xA;accessed from the Target Machine in accordance with the Specification. Such&#xA;Installable Software Agreement must inform the user of the terms and&#xA;conditions that govern the Installable Software and must solicit acceptance&#xA;by the end user in the manner prescribed in such Installable&#xA;Software Agreement. Upon such indication of agreement by the user, the&#xA;provisioning Technology will complete installation of the&#xA;Installable Software.&#xA;&#xA;Cryptography&#xA;&#xA;Content may contain encryption software. The country in which you are currently&#xA;may have restrictions on the import, possession, and use, and/or re-export to&#xA;another country, of encryption software. BEFORE using any encryption software,&#xA;please check the country&apos;s laws, regulations and policies concerning the import,&#xA;possession, or use, and re-export of encryption software, to see if this is&#xA;permitted.&#xA;&#xA;Java and all Java-based trademarks are trademarks of Oracle Corporation in the&#xA;United States, other countries, or both.&#xA;'/>
+        <property name='df_LT.providerName' value='Eclipse Xpect Project'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.xtext.lib.feature.feature.group' version='0.2.0.202201060752'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='13'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect' range='[0.2.0.202201060752,0.2.0.202201060752]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.source' range='[0.2.0.202201060752,0.2.0.202201060752]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.ui' range='[0.2.0.202201060752,0.2.0.202201060752]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.ui.source' range='[0.2.0.202201060752,0.2.0.202201060752]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.xtext.lib' range='[0.2.0.202201060752,0.2.0.202201060752]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.xtext.lib.source' range='[0.2.0.202201060752,0.2.0.202201060752]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='io.github.classgraph' range='[4.8.35.v20190528-1517,4.8.35.v20190528-1517]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='io.github.classgraph.source' range='[4.8.35.v20190528-1517,4.8.35.v20190528-1517]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.junit' range='[4.11.0.v201303080030,4.11.0.v201303080030]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.junit.source' range='[4.11.0.v201303080030,4.11.0.v201303080030]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.hamcrest.core' range='[1.3.0.v201303031735,1.3.0.v201303031735]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.hamcrest.core.source' range='[1.3.0.v201303031735,1.3.0.v201303031735]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.xtext.lib.feature.feature.jar' range='[0.2.0.202201060752,0.2.0.202201060752]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='%25licenseURL' url='%25licenseURL'>
+          %license
+        </license>
+      </licenses>
+      <copyright>
+        Copyright (c) 2012-2017 TypeFox GmbH and itemis AG.&#xA;This program and the accompanying materials are made&#xA;available under the terms of the Eclipse Public License 2.0&#xA;which is available at https://www.eclipse.org/legal/epl-2.0/&#xA;SPDX-License-Identifier: EPL-2.0&#xA;&#xA;Contributors:&#xA;  Moritz Eysholdt - Initial contribution and API
+      </copyright>
+    </unit>
+    <unit id='org.eclipse.xpect.xtext.lib.source' version='0.2.0.202201060752' singleton='false'>
+      <update id='org.eclipse.xpect.xtext.lib.source' range='[0.0.0,0.2.0.202201060752)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.bundleVendor' value='Eclipse Xpect Project'/>
+        <property name='df_LT.bundleName' value='Lib Source'/>
+        <property name='org.eclipse.equinox.p2.name' value='%bundleName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%bundleVendor'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='OSGI-INF/l10n/bundle-src'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.xtext.lib.source' version='0.2.0.202201060752'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.xpect.xtext.lib.source' version='0.2.0.202201060752'/>
+        <provided namespace='osgi.identity' name='org.eclipse.xpect.xtext.lib.source' version='0.2.0.202201060752'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='source' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.xpect.xtext.lib.source' version='0.2.0.202201060752'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.eclipse.xpect.xtext.lib.source&#xA;Bundle-Version: 0.2.0.202201060752&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.xpect.ui' version='0.2.0.202201060752' generation='2'>
+      <update id='org.eclipse.xpect.ui' range='[0.0.0,0.2.0.202201060752)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='org.eclipse.xpect.ui'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+      </properties>
+      <provides size='10'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.ui' version='0.2.0.202201060752'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.xpect.ui' version='0.2.0.202201060752'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.ui' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.ui.contentassist' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.ui.internal' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.ui.quickfix' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.ui.services' version='0.0.0'/>
+        <provided namespace='java.package' name='org.eclipse.xpect.ui.util' version='0.0.0'/>
+        <provided namespace='osgi.identity' name='org.eclipse.xpect.ui' version='0.2.0.202201060752'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='15'>
+        <required namespace='osgi.bundle' name='org.eclipse.xpect' range='[0.2.0,0.2.1)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='3.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='3.7.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui.ecore' range='0.0.0' optional='true' greedy='false'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui.shared' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.builder' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.antlr.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.common.types.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.xtext.ui.codetemplates.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.compare' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='3.7.0'/>
+        <required namespace='java.package' name='org.apache.log4j' range='0.0.0'/>
+        <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.xpect.ui' version='0.2.0.202201060752'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.eclipse.xpect.ui;singleton:=true&#xA;Bundle-Version: 0.2.0.202201060752&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.junit.source' version='4.11.0.v201303080030' singleton='false'>
+      <update id='org.junit.source' range='[0.0.0,4.11.0.v201303080030)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.pluginName' value='JUnit Testing Framework Source'/>
+        <property name='df_LT.providerName' value='Eclipse Orbit'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.junit.source' version='4.11.0.v201303080030'/>
+        <provided namespace='osgi.bundle' name='org.junit.source' version='4.11.0.v201303080030'/>
+        <provided namespace='osgi.identity' name='org.junit.source' version='4.11.0.v201303080030'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='source' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.junit.source' version='4.11.0.v201303080030'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.junit.source&#xA;Bundle-Version: 4.11.0.v201303080030&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.xpect.ui.junit.source' version='0.2.0.202201060752' singleton='false'>
+      <update id='org.eclipse.xpect.ui.junit.source' range='[0.0.0,0.2.0.202201060752)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.bundleVendor' value='Eclipse Xpect Project'/>
+        <property name='df_LT.bundleName' value='Junit Source'/>
+        <property name='org.eclipse.equinox.p2.name' value='%bundleName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%bundleVendor'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='OSGI-INF/l10n/bundle-src'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.ui.junit.source' version='0.2.0.202201060752'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.xpect.ui.junit.source' version='0.2.0.202201060752'/>
+        <provided namespace='osgi.identity' name='org.eclipse.xpect.ui.junit.source' version='0.2.0.202201060752'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='source' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.xpect.ui.junit.source' version='0.2.0.202201060752'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.eclipse.xpect.ui.junit.source&#xA;Bundle-Version: 0.2.0.202201060752&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.eclipse.xpect.xtext.xbase.lib.source' version='0.2.0.202201060752' singleton='false'>
+      <update id='org.eclipse.xpect.xtext.xbase.lib.source' range='[0.0.0,0.2.0.202201060752)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.bundleVendor' value='Eclipse Xpect Project'/>
+        <property name='df_LT.bundleName' value='Lib Source'/>
+        <property name='org.eclipse.equinox.p2.name' value='%bundleName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%bundleVendor'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='OSGI-INF/l10n/bundle-src'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.xpect.xtext.xbase.lib.source' version='0.2.0.202201060752'/>
+        <provided namespace='osgi.bundle' name='org.eclipse.xpect.xtext.xbase.lib.source' version='0.2.0.202201060752'/>
+        <provided namespace='osgi.identity' name='org.eclipse.xpect.xtext.xbase.lib.source' version='0.2.0.202201060752'>
+          <properties size='1'>
+            <property name='type' value='osgi.bundle'/>
+          </properties>
+        </provided>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='source' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.eclipse.xpect.xtext.xbase.lib.source' version='0.2.0.202201060752'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-SymbolicName: org.eclipse.xpect.xtext.xbase.lib.source&#xA;Bundle-Version: 0.2.0.202201060752&#xA;
           </instruction>
         </instructions>
       </touchpointData>
